@@ -1,0 +1,60 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.centeralised {
+  margin: 10px auto;
+  text-align: center;
+}
+
+.chathistory {
+  max-height: 518.5px;
+  margin: 10px auto;
+  padding: 10px;
+  margin-bottom: 0;
+  background: #f1f1f1;
+  text-align: left;
+  overflow: auto;
+}
+
+
+.txtarea {}
+
+.siglemessage {
+  font-size: 12px;
+  padding: 5px;
+  border-bottom: 1px solid #b3b3b3;
+}
+
+.chatbox form {
+  display: flex;
+  justify-content: center;
+}
+
+.chatbox form div:nth-child(1) {
+  width: 70%;
+}
+
+.chatbox form div:nth-child(2) {
+  width: 20%;
+  margin-left: 10px;
+}
+.txtarea,
+.submit_chat {
+  width: 100%;
+  height: 40px;
+  margin: 10px;
+  border-radius: 5px;
+  color: #151515;
+  font-size: 20px;
+  text-align: center;
+}
+
+.siglemessage {
+  font-size: 18px;
+}
+.siglemessage span {
+  font-size: 10px;
+}

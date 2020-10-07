@@ -1,0 +1,254 @@
+.main_container {
+  width: 100%;
+}
+
+.left_side {
+  width: 25%;
+  float: left;
+
+}
+
+.right_side {
+  width: 75%;
+  float: right;
+}
+
+.menu_block a {
+  text-decoration: none;
+  list-style-type: none;
+  color: rgb(153, 8, 39);
+}
+
+.menu_block ul li:hover {
+  opacity: 0.6;
+  color: red;
+}
+
+.menu_block h1 {
+  text-align: center;
+  color: black;
+}
+
+.menu_block li {
+  height: 40px;
+  font-size: 28px;
+  text-align: start;
+  margin: 5%;
+  text-align: center;
+}
+
+.list2a {
+  margin-bottom: 8px;
+  padding: 0;
+  list-style: none;
+  counter-reset: li;
+}
+
+.list2a li {
+  position: relative;
+  /* border: 2px solid #337AB7; */
+  border: 2px solid #151515;
+  background: #ebf3fa;
+  padding: 16px 20px 16px 28px;
+  margin: 12px 0 12px 40px;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.list2a li:hover {
+  background: #fff;
+}
+
+.list2a li:before {
+  line-height: 32px;
+  position: absolute;
+  top: 4px;
+  left: -40px;
+  width: 40px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background: #151515;
+  counter-increment: li;
+  content: counter(li);
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+
+.list2a li:hover:before {
+  width: 46px;
+}
+
+.list2a li:after {
+  position: absolute;
+  left: 0;
+  top: 4px;
+  content: "";
+  height: 0;
+  width: 0;
+  border: 16px solid transparent;
+  border-left-color: #151515;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+
+.list2a li:hover:after {
+  margin-left: 6px;
+}
+
+/* table */
+table.redTable {
+  border: 5px solid #a40808;
+  background-color: #eee7db;
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+table.redTable td,
+table.redTable th {
+  border: 5px solid #aaaaaa;
+  padding: 10px 0px;
+}
+
+table.redTable tbody td {
+  font-size: 18px;
+  color: #333333;
+}
+
+table.redTable tr:nth-child(even) {
+  background: #f5c8bf;
+}
+
+table.redTable thead {
+  background: #a40808;
+  border-bottom: 0px solid #444444;
+}
+
+table.redTable thead th {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  border-left: 5px solid #a40808;
+}
+
+table.redTable thead th:first-child {
+  border-left: none;
+}
+
+table.redTable tfoot {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  background: #a40808;
+}
+
+table.redTable tfoot td {
+  font-size: 14px;
+}
+
+table.redTable tfoot .links {
+  text-align: right;
+}
+
+table.redTable tfoot .links a {
+  display: inline-block;
+  background: #ffffff;
+  color: #a40808;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+
+.tablePanel {
+  width: 80%;
+  margin-left: 5%;
+}
+
+.right_side h1 {
+  color: black;
+  text-align: center;
+}
+
+#redTableAdds td:nth-child(2) {
+  font-size: 12px;
+}
+
+#redTableAdds td:nth-child(3) {
+  font-size: 12px;
+}
+
+#redTableAdds td:nth-child(4) {
+  font-size: 12px;
+}
+
+/* add news*/
+a.btn7 {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  padding: 0.8em 1em calc(0.8em + 3px);
+  border-radius: 3px;
+  background: rgb(64, 199, 129);
+  box-shadow: 0 -3px rgb(53, 167, 110) inset;
+  transition: 0.2s;
+}
+
+a.btn7:hover {
+  background: rgb(53, 167, 110);
+}
+
+a.btn7:active {
+  background: rgb(33, 147, 90);
+  box-shadow: 0 3px rgb(33, 147, 90) inset;
+}
+
+.wrapper_adds_btn {
+  margin-top: 5%;
+  text-align: center;
+}
+
+.newsAdds {
+  margin-left: 10%;
+  width: 50%;
+}
+
+.newsAdds span {
+  margin-right: 2%;
+  font-size: 24px;
+}
+
+.newsAdds input[type="text"] {
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  outline: none;
+  height: 32px;
+  width: 240px;
+  color: red;
+  font-size: 24px;
+  margin-left: 2%;
+  float: right;
+}
+
+.newsAdds input[type="submit"] {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  padding: 0.8em 1em calc(0.8em + 3px);
+  border-radius: 3px;
+  background: rgb(64, 199, 129);
+  box-shadow: 0 -3px rgb(53, 167, 110) inset;
+  transition: 0.2s;
+  float: right;
+}
+
+.newsAdds input[type="submit"]:hover {
+  background: rgb(53, 167, 110);
+}
+
+.newsAdds input[type="submit"]:active {
+  background: rgb(33, 147, 90);
+  box-shadow: 0 3px rgb(33, 147, 90) inset;
+}

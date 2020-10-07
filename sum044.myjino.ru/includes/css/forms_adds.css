@@ -1,0 +1,76 @@
+body {
+  background-color: #d3dce1;
+  /* background-image: url('../images/tekstura-krugi-fon.jpg'); */
+}
+
+.form_container {
+  width: 100%;
+}
+
+.form_wrapper {
+  background-color: white;
+  padding: 2%;
+  width: 40%;
+  height: 100%;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 5%;
+  -webkit-box-shadow: 0px 0px 35px 33px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 0px 35px 33px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 0px 35px 33px rgba(34, 60, 80, 0.2);
+}
+
+.form_wrapper input {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.form_wrapper h3 {
+  margin-top: 0;
+}
+
+.form_wrapper input[type='text']:nth-child(2) {
+  width: 33%;
+  height: 32px;
+}
+
+.form_wrapper input[type='text']:nth-child(3) {
+  width: 33%;
+  height: 32px;
+}
+
+.form_wrapper textarea {
+  width: 65%;
+  height: 100px;
+}
+
+.form_wrapper input[type='submit'] {
+  width: 33%;
+  height: 32px;
+  border: 0;
+  background-color: #d3dce1;
+  -webkit-box-shadow: 26px 27px 6px -19px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 26px 27px 6px -19px rgba(34, 60, 80, 0.2);
+  box-shadow: 26px 27px 6px -19px rgba(34, 60, 80, 0.2);
+}
+
+.form_wrapper a {
+  position: relative;
+  margin-left: 80%;
+}
+
+.form_wrapper a {
+  text-decoration: none;
+  color: black;
+  opacity: 0.8;
+}
+
+.form_wrapper a:hover {
+  color: red;
+  opacity: 0.6;
+}

@@ -1,0 +1,434 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+
+/* навигация */
+
+header {
+  background: #151515;
+  text-align: center;
+  margin-bottom: 1%;
+  -webkit-box-shadow: 0px 11px 20px 4px rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 11px 20px 4px rgba(0, 0, 0, 0.9);
+}
+
+.header_wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+header a {
+  text-decoration: none;
+  outline: none;
+  display: block;
+  transition: .3s ease-in-out;
+}
+
+.SingIn a {
+  color: #fff;
+  list-style-type: none;
+}
+
+.SingIn span {
+  color: red;
+  margin-left: 50px;
+}
+
+.SingIn a:nth-child(1):hover {
+  color: red;
+  opacity: 0.6;
+}
+
+.SingIn a:nth-child(2):hover {
+  color: #fff;
+  opacity: 0.6;
+}
+
+nav {
+  display: table;
+
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.topmenu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.topmenu>li {
+  width: 25%;
+  float: left;
+  position: relative;
+}
+
+.topmenu>li>a {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  padding: 15px 30px;
+}
+
+.topmenu li a:hover {
+  color: red;
+}
+
+.submenu {
+  background: #151515;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 5;
+  width: 180px;
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: 0 0;
+  transition: .5s ease-in-out;
+}
+
+.submenu a {
+  color: white;
+  text-align: left;
+  padding: 12px 15px;
+  font-size: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+.submenu li:last-child a {
+  border-bottom: none;
+}
+
+.topmenu>li:hover .submenu {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+
+/* заголовок мейн трансляции ----------------- */
+.header-h2 {
+  position: relative;
+  text-align: center;
+  margin-bottom: .5rem;
+}
+
+.header-h2 h2 {
+  position: relative;
+  display: inline-block;
+  border-radius: 20px;
+  margin-bottom: 0;
+  padding: 0.5rem 1rem;
+  border-bottom: .125rem solid #333;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  color: red;
+}
+
+
+
+/* вторая часть шапки ----------------------------------------------------------------------------------------------------*/
+
+.header_bottom {
+  height: 150px;
+  width: 100%;
+  background-image: url(../images/headerTop.jpg);
+}
+
+.header_form_wrapper {
+
+  padding-top: 3.5%;
+}
+
+.header_form_wrapper * {
+  box-sizing: border-box;
+}
+
+/* начало Кнопка поиска ------------------------------------------------------------------------------------------------*/
+.header_form_wrapper * {
+  box-sizing: border-box;
+}
+
+.header_form_wrapper form {
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
+  background: #fff;
+  border-bottom: 4px solid #151515;
+}
+
+.header_form_wrapper input,
+button {
+  border: none;
+  outline: none;
+  background: transparent;
+
+}
+
+.header_form_wrapper input {
+  width: 100%;
+  height: 42px;
+  padding-left: 15px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+
+}
+
+.header_form_wrapper button {
+  height: 42px;
+  width: 42px;
+  position: absolute;
+  top: 0.9px;
+  right: 0;
+  cursor: pointer;
+  background-image: url(../images/search.svg);
+}
+
+/* убираем крестик поиска во всех браузерах*/
+input[type=text]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type=text]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+/* конец кнопка поиска  */
+/* конец шапки  */
+
+
+/* начало мейна ------------------------------------------------------------------------------------*/
+main {
+  width: 100%;
+  height: auto;
+}
+
+/* конец мейна */
+
+/* Начало левой части мейна ------------------------------------------------------------------------------------------------*/
+.left_page_wrapper {
+  width: 57%;
+  float: left;
+  height: 100%;
+  margin-left: 2%;
+
+}
+
+.video_name {}
+
+.video_name h2 {
+  text-align: center;
+  color: red;
+  margin-top: 1%;
+}
+
+
+
+
+/* прототипные стили */
+.video_play {
+  height: 500px;
+  margin: 1%;
+  -webkit-box-shadow: 3px 4px 82px 15px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 4px 82px 15px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 4px 82px 15px rgba(0, 0, 0, 0.75);
+}
+
+.video_description {
+  height: 200px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.video_description h2 {
+  text-align: center;
+  margin-bottom: 1%;
+  color: red;
+}
+
+
+.bottom_description {
+  margin-bottom: 1%;
+  margin-left: 5%;
+}
+
+.bottom_description h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.bottom_description div {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+.bottom_description * {
+  padding-left: 1%;
+}
+
+.main_description {
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.main .left_page_wrapper {
+  min-width: 550px;
+}
+
+
+
+
+/* конец левой части мейна */
+
+
+
+
+
+/* Начало правой части мейна ------------------------------------------------------------------------------------------------*/
+.right_page_wrapper {
+  width: 38%;
+  float: right;
+  margin-right: 2%;
+  height: 800px;
+  min-width: 450px;
+}
+
+.right_page_wrapper .header-h2 {
+  padding: 0;
+
+}
+
+.right_page_wrapper h2 {
+  margin: 0;
+  margin-top: 1%;
+}
+
+/* прототипные стили */
+.chat_wrapper {
+  height: 600px;
+  -webkit-box-shadow: 3px 4px 82px 15px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 4px 82px 15px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 4px 82px 15px rgba(0, 0, 0, 0.75);
+
+}
+
+/* конец правой части мейна  */
+
+
+
+/* новости ----- */
+.container_news {
+  width: 100%;
+}
+
+.news_wrapper {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 5%;
+}
+
+.news_list img {
+  width: 200px;
+  max-height: 125px;
+}
+
+.news_list h4 {
+  text-align: center;
+}
+
+.headline_news h2 {
+  text-align: center;
+}
+
+.headline_news hr {
+  padding-bottom: 2%;
+}
+
+.news_list:hover {
+  opacity: 0.6;
+}
+
+.news_list a {
+  text-decoration-line: none;
+}
+
+@media screen and (max-width: 605px) {
+  .topmenu li:nth-child(2) {
+    display: none;
+  }
+
+  .topmenu li:nth-child(3) {
+    display: none;
+  }
+
+  .topmenu li:nth-child(4) {
+    margin-left: 25%;
+  }
+
+  .SingIn {
+    margin-right: 5%;
+  }
+}
+
+.main {}
+
+@media screen and (max-width: 860px) {
+  .right_page_wrapper {}
+
+}
+
+
+.container_footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 120px;
+  background-color: #151515;
+  color: white;
+}
+
+.add_cams {
+  padding-top: 2%;
+  width: 100%;
+  text-align: center;
+}
+
+.contacts_list {
+  padding-left: 1%;
+}
+
+.container_footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.container_footer a:hover {
+  color: red;
+  opacity: 0.8;
+}
